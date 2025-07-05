@@ -1,8 +1,9 @@
 import { Suspense } from "react";
 import DetailProduct from "./ProductDetails";
 import Productloading from "./Productloading";
+import { Params } from "next/dist/server/request/params";
 
-function page({ params }: { params: { slugProduct: string } }) {
+function page({ params }: { params: Params }) {
   return (
     <>
       <Suspense fallback={<Productloading />}>

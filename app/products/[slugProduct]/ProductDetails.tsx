@@ -6,8 +6,9 @@ import AddToBasketBtn from "@/components/product/AddToBasketBtn";
 import Link from "next/link";
 import { auth } from "@/auth";
 import { logingoogle } from "@/lib/auth-actions";
+import { Params } from "next/dist/server/request/params";
 
-async function DetailProduct({ params }: { params: { slugProduct: string } }) {
+async function DetailProduct({ params }: { params: Params }) {
   const product: Product = await getProduct(params.slugProduct);
   const count = product.count;
   const session = await auth();
