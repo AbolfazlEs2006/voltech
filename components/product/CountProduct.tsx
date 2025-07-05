@@ -5,7 +5,6 @@ import { toast } from "react-hot-toast";
 
 function CountProduct({ count }: { count: number }) {
   const [counts, setcounts] = useState(1);
-  const [err, setErr] = useState("");
 
   useEffect(() => {
     if (counts < 1) {

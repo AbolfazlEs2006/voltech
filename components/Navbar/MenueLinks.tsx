@@ -1,12 +1,7 @@
-"use client";
-
 import Link from "next/link";
-import { useState } from "react";
 import DarkMode from "./DarkMode";
 
 function MenueLinks() {
-  const [menu, setMenu] = useState(false);
-
   return (
     <>
       <div className="drawer z-200 block lg:hidden mr-10">
