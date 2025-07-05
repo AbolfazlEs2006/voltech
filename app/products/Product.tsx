@@ -13,15 +13,24 @@ export interface Product {
 }
 
 async function Products() {
-  const res = await fetch("http://localhost:3000/api/products");
-  const products: Product[] = await res.json();
-  return (
-    <>
-      <div className="grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 my-5">
+  try {
+    const res = await fetch("http://localhost:3000/api/products");
+
+    if (!res.ok) {
+      throw new Error("خطا در دریافت محصولات");
+    }
+
+    const products: Product[] = await res.json();
+
+    return (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 my-5">
         <CartProduct products={products} />
       </div>
-    </>
-  );
+    );
+  } catch (error) {
+    console.error("Error fetching products:", error);
+    return <div className="text-red-500 p-4">خطا در بارگذاری محصولات!</div>;
+  }
 }
 
 export default Products;
