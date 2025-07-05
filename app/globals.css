@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@plugin "daisyui";
+
+/* body {
+  font-family: "iransens";
+} */
+
+@font-face {
+  font-family: "iransens";
+  src: url("/public/fonts/IRANSans-web\ \(1\).woff");
+  src: url("/public/fonts/IRANSansWeb\ \(1\).woff");
+  src: url("/public/fonts/IRANSansWeb\ \(1\).woff2");
+  src: url("/public/fonts/IRANSansWeb_FaNum\ \(1\).ttf");
+  src: url("/public/fonts/IRANSansWeb_FaNum\ \(1\).woff");
+}
