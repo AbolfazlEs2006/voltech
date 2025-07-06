@@ -6,14 +6,10 @@ type Params = {
   slugProduct: string;
 };
 
-function page({ params }: { params: Params }) {
+export default function Page({ params }: { params: Params }) {
   return (
-    <>
-      <Suspense fallback={<Productloading />}>
-        <DetailProduct params={params} />
-      </Suspense>
-    </>
+    <Suspense fallback={<Productloading />}>
+      <DetailProduct params={params} />
+    </Suspense>
   );
 }
-
-export default page;

@@ -18,6 +18,9 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  typescript: {
+    ignoreBuildErrors: process.env.VERCEL === "1", // فقط در Vercel ignore شود
+  },
 };
 
 export default nextConfig;

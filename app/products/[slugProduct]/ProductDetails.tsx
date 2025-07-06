@@ -7,11 +7,13 @@ import Link from "next/link";
 import { auth } from "@/auth";
 import { logingoogle } from "@/lib/auth-actions";
 
-type Params = {
-  slugProduct: string;
+type ProductDetailsProps = {
+  params: {
+    slugProduct: string;
+  };
 };
 
-async function DetailProduct({ params }: { params: Params }) {
+async function DetailProduct({ params }: ProductDetailsProps) {
   const product: Product = await getProduct(params.slugProduct);
   const count = product.count;
   const session = await auth();
