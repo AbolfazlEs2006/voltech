@@ -1,7 +1,10 @@
 import { Suspense } from "react";
 import DetailProduct from "./ProductDetails";
 import Productloading from "./Productloading";
-import { Params } from "next/dist/server/request/params";
+
+type Params = {
+  slugProduct: string;
+};
 
 function page({ params }: { params: Params }) {
   return (
