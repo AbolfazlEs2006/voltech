@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "build": "node initdb.js && vite build",
     "start": "next start",
     "lint": "next lint"
   },
