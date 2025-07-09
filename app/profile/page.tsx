@@ -1,8 +1,8 @@
 import { auth } from "@/auth";
-import { logout } from "@/lib/auth-actions";
 import { redirect } from "next/navigation";
 import Image from "next/image";
 import AddNumberHandeler from "@/components/profile/AddNumberHandeler";
+import LogoutHandler from "@/components/logout/LogoutHandeler";
 
 async function Profile() {
   const session = await auth();
@@ -45,12 +45,7 @@ async function Profile() {
             :تلفن
           </h1>
           <hr className="my-3 text-gray-500 dark:text-gray-600" />
-          <button
-            onClick={logout}
-            className="btn bg-red-500 text-gray-200 border-none w-full mt-10"
-          >
-            خروج از حساب کاربری
-          </button>
+          <LogoutHandler style="btn bg-red-500 text-gray-200 border-none w-full mt-10" />
         </section>
       </header>
     </>

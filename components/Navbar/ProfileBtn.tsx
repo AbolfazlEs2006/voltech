@@ -1,10 +1,11 @@
 import { Session } from "next-auth";
-import { logout } from "@/lib/auth-actions";
 import Link from "next/link";
 import Image from "next/image";
+import LogoutHandler from "../logout/LogoutHandeler";
 
 function ProfileBtn({ session }: { session: Session }) {
   const userData = session?.user;
+
   return (
     <div>
       {userData ? (
@@ -40,9 +41,7 @@ function ProfileBtn({ session }: { session: Session }) {
               </li>
               <hr className="text-gray-300 my-1 dark:text-gray-300" />
               <li>
-                <button className="justify-end text-red-400" onClick={logout}>
-                  خروج از حساب کاربری
-                </button>
+                <LogoutHandler style={"justify-end text-red-400"} />
               </li>
             </ul>
           </div>

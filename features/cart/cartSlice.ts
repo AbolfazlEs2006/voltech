@@ -1,12 +1,13 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-interface CartItem {
-  id: string;
-  name: string;
+export interface CartItem {
+  id: number;
+  title: string;
   price: number;
   quantity: number;
   img: string;
-  amount: number;
+  count: number;
+  slug: string;
 }
 
 interface CartState {
@@ -39,28 +40,25 @@ const cartSlice = createSlice({
       }
 
       state.amount = state.CartItem.reduce(
-        (sum, item) => sum + item.quantity * item.amount,
+        (sum, item) => sum + item.quantity * item.count,
         0
       );
       state.total = state.CartItem.reduce(
-        (sum, item) => sum + item.price * item.quantity * item.amount,
+        (sum, item) => sum + item.price * item.count,
         0
       );
 
       localStorage.setItem("cart", JSON.stringify(state));
     },
-    removeItem: (state, action: PayloadAction<string>) => {
+    removeItem: (state, action: PayloadAction<number>) => {
       state.CartItem = state.CartItem.filter(
         (item) => item.id !== action.payload
       );
       state.amount = state.CartItem.reduce(
-        (sum, item) => sum + item.quantity * item.amount,
+        (sum, item) => sum + item.quantity * item.count,
         0
       );
-      state.total = state.CartItem.reduce(
-        (sum, item) => sum + item.price * item.quantity * item.amount,
-        0
-      );
+      state.total = state.CartItem.reduce((sum, item) => sum + item.price, 0);
       localStorage.setItem("cart", JSON.stringify(state));
     },
     clearCart: (state) => {

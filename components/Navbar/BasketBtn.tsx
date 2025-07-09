@@ -1,6 +1,12 @@
+"use client";
+
 import Link from "next/link";
 
+import { useAppSelector } from "@/hook/hooks";
+
 function BasketBtn() {
+  const { CartItem, total } = useAppSelector((state) => state.cart);
+
   return (
     <div className="dropdown dropdown-end">
       <div
@@ -25,28 +31,43 @@ function BasketBtn() {
             />{" "}
           </svg>
           <span className="badge badge-sm top-[-10] left-[2] bg-gray-100 dark:bg-gray-600 indicator-item ">
-            8
+            {CartItem.length}
           </span>
         </div>
       </div>
-      <div
-        tabIndex={0}
-        className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-52 shadow left-[-15] text-end shadow"
-      >
-        <div className="card-body">
-          <span className="text-lg font-bold flex justify-end gap-1 items-center">
-            <h1>محصول</h1>8
-          </span>
-          <span className="text-info">جمع خرید: 250,000 تومان</span>
-          <div className="card-actions">
-            <Link className="w-100" href={"/basket"}>
-              <button className="btn btn-primary btn-block mt-3">
-                مشاهده سبد خرید
-              </button>
-            </Link>
+      {CartItem.length === 0 ? (
+        <div
+          tabIndex={0}
+          className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-72 shadow left-[-15] text-end shadow"
+        >
+          <div className="card-body">
+            <h1>سبد خرید شما خالی است</h1>
           </div>
         </div>
-      </div>
+      ) : (
+        <div
+          tabIndex={0}
+          className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-72 shadow left-[-15] text-end shadow"
+        >
+          <div className="card-body">
+            <span className="text-lg font-bold flex justify-end gap-1 items-center">
+              <h1>محصول</h1>
+              {CartItem.length}
+            </span>
+            <h1 className="text-gray">
+              جمع خرید:{" "}
+              <span className="text-start">{total.toLocaleString()} تومان</span>
+            </h1>
+            <div className="card-actions">
+              <Link className="w-100" href={"/basket"}>
+                <button className="btn btn-gray btn-block mt-3">
+                  مشاهده سبد خرید
+                </button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

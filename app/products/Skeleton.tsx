@@ -19,6 +19,18 @@ function Skeleton() {
         <div className="skeleton h-6 w-full"></div>
         <div className="skeleton h-6 w-full"></div>
       </div>
+      <div className="flex w-100 flex-col gap-4 mt-5">
+        <div className="skeleton h-32 w-full"></div>
+        <div className="skeleton h-6 w-28"></div>
+        <div className="skeleton h-6 w-full"></div>
+        <div className="skeleton h-6 w-full"></div>
+      </div>
+      <div className="flex w-100 flex-col gap-4">
+        <div className="skeleton h-32 w-full"></div>
+        <div className="skeleton h-6 w-28"></div>
+        <div className="skeleton h-6 w-full"></div>
+        <div className="skeleton h-6 w-full"></div>
+      </div>
       <div className="flex w-100 flex-col gap-4">
         <div className="skeleton h-32 w-full"></div>
         <div className="skeleton h-6 w-28"></div>

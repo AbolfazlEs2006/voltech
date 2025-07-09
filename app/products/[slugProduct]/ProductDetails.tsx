@@ -2,10 +2,8 @@ import { getProduct } from "@/lib/product";
 import { Product } from "../Product";
 import Image from "next/image";
 import CountProduct from "@/components/product/CountProduct";
-import AddToBasketBtn from "@/components/product/AddToBasketBtn";
 import Link from "next/link";
 import { auth } from "@/auth";
-import { logingoogle } from "@/lib/auth-actions";
 
 type ProductDetailsProps = {
   params: {
@@ -15,7 +13,6 @@ type ProductDetailsProps = {
 
 async function DetailProduct({ params }: ProductDetailsProps) {
   const product: Product = await getProduct(params.slugProduct);
-  const count = product.count;
   const session = await auth();
 
   return (
@@ -154,15 +151,14 @@ async function DetailProduct({ params }: ProductDetailsProps) {
             </span>
           </h1>
           {session?.user ? (
-            <div className="flex items-center flex-row-reverse mt-7 w-full lg:mt-15 lg:mt-15">
-              <CountProduct count={count} />
-              <AddToBasketBtn count={count} />
-            </div>
+            <CountProduct product={product} />
           ) : (
             <div className="w-full mt-5 lg:mt-10 lg:mt-5">
-              <button onClick={logingoogle} className="btn bg-gray-500 w-full">
-                ورود | ثبت نام کنید
-              </button>
+              <Link href={"/signup"}>
+                <button className="btn bg-gray-300 dark:text-gray-800 w-full">
+                  ورود | ثبت نام کنید
+                </button>
+              </Link>
             </div>
           )}
         </main>
