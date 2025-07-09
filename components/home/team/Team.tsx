@@ -16,8 +16,8 @@ function Team() {
   return (
     <SwiperCategory text="تیم ما" countSlide={5} href="" id="5" showBtn={false}>
       {team.map((profile) => (
-        <SwiperSlide>
-          <TeamCart img={profile.img} key={profile.id} />
+        <SwiperSlide key={profile.id}>
+          <TeamCart img={profile.img} />
         </SwiperSlide>
       ))}
     </SwiperCategory>

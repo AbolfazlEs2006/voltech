@@ -5,7 +5,7 @@ import CartProduct from "../product/CartProduct";
 import useProducts from "@/hook/useProduct";
 
 function ProductSafe() {
-  const { products, loading, error } = useProducts();
+  const { products, loading } = useProducts();
   return (
     <SwiperCategory
       countSlide={5}
