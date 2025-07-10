@@ -3,7 +3,7 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <footer className="bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200 text-end p-5 flex flex-col lg:flex-row lg:flex-row-reverse">
+      <footer className="bg-gray-200 text-gray-800 mt-8 dark:bg-gray-800 dark:text-gray-200 text-end p-5 flex flex-col lg:flex-row lg:flex-row-reverse">
         <section className=" w-full">
           <h1 className="text-xl mb-2">لینک های مفید</h1>
           <div className="grid grid-cols-2 justify-between items-center">
