@@ -9,7 +9,7 @@ export default function useProducts() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await fetch("http://localhost:3000/api/products");
+        const res = await fetch("https://voltech-shop.vercel.app/api/products");
 
         if (!res.ok) {
           throw new Error("خطا در دریافت محصولات");

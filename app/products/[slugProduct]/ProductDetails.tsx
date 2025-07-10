@@ -15,7 +15,7 @@ async function DetailProduct({ params }: ProductDetailsProps) {
   const ProductParams = await params.slugProduct;
   try {
     const res = await fetch(
-      `http://localhost:3000/api/products/${ProductParams}`
+      `https://voltech-shop.vercel.app/api/products/${ProductParams}`
     );
 
     if (!res.ok) {
