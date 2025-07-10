@@ -3,8 +3,8 @@ import Link from "next/link";
 function Footer() {
   return (
     <>
-      <footer className="bg-gray-800 text-end p-5">
-        <section>
+      <footer className="bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200 text-end p-5 flex flex-col lg:flex-row lg:flex-row-reverse">
+        <section className=" w-full">
           <h1 className="text-xl mb-2">لینک های مفید</h1>
           <div className="grid grid-cols-2 justify-between items-center">
             <Link href={"/"} className="mb-3">
@@ -21,7 +21,7 @@ function Footer() {
             <Link href={"/href"}>ورود | ثبت نام</Link>
           </div>
         </section>
-        <section className="mt-6">
+        <section className="mt-6 w-full lg:ml-10">
           <h1 className="text-2xl mb-3">ولتک</h1>
           <p className="mb-5">
             گروه صنعتی سریوان با سابقه‌ای درخشان در تولید و عرضه ابزارآلات دستی
@@ -35,7 +35,7 @@ function Footer() {
             بزرگترین تولیدکنندگان ابزارآلات در ایران و شناخته می شود.
           </p>
         </section>
-        <section>
+        <section className=" w-full">
           <h1 className="text-xl font-bold">نشانی ما</h1>
           <div className="mt-2">
             <h1 className="flex justify-between flex-row-reverse mb-3">
@@ -52,18 +52,20 @@ function Footer() {
             </h1>
           </div>
           <div className="grid grid-cols-2 gap-3 mt-5 mb-5">
-            <button className="bg-gray-700 rounded p-3">
+            <button className="bg-gray-200 dark:bg-gray-800 dark:text-gray-200 rounded p-3">
               ارسال رایگان به برخی شهر ها
             </button>
-            <button className="bg-gray-700 rounded p-3">
+            <button className="bg-gray-200 dark:bg-gray-800 dark:text-gray-200 rounded p-3">
               ضمانت با گارانتی
             </button>
-            <button className="bg-gray-700 rounded p-3">پشتیبانی سریع</button>
-            <button className="bg-gray-700 rounded p-3">
+            <button className="bg-gray-200 dark:bg-gray-800 dark:text-gray-200 rounded p-3">
+              پشتیبانی سریع
+            </button>
+            <button className="bg-gray-200 dark:bg-gray-800 dark:text-gray-200 rounded p-3">
               محصولات با کیفیت
             </button>
           </div>
-          <footer className="footer sm:footer-horizontal bg-gray-700 text-neutral-content items-center p-4">
+          <footer className="footer sm:footer-horizontal bg-gray-200 text-gray-800 dark:bg-gray-800 dark:text-gray-200 items-center p-4">
             <aside className="grid-flow-col items-center">
               <svg
                 width="36"
