@@ -6,6 +6,7 @@ import useProducts from "@/hook/useProduct";
 
 function ProductSafe() {
   const { products, loading } = useProducts();
+
   return (
     <SwiperCategory
       countSlide={5}

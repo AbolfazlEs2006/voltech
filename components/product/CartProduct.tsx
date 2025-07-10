@@ -6,7 +6,11 @@ function CartProduct({ products }: { products: Product[] }) {
   return (
     <>
       {products.map((product) => (
-        <Link key={product.id} href={`/products/${product.slug}`} className="">
+        <Link
+          key={product.slug}
+          href={`/products/${product.slug}`}
+          className=""
+        >
           <section className="w-[100%] px-5 mt-6">
             <div className="items-center text-center bg-gray-200 dark:bg-gray-800 p-5 rounded h-85 shadow-lg">
               <div className="flex justify-center my-7">

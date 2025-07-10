@@ -60,7 +60,7 @@ function Basket() {
             <section className="flex flex-col lg:ml-10 mt-10 ">
               {CartItem.map((product) => (
                 <div
-                  key={product.id}
+                  key={product.slug}
                   className="flex flex-row-reverse border-1 border-gray-300 dark:border-gray-600 rounded p-5 w-full lg:w-170 mb-5"
                 >
                   <Link href={`/products/${product.slug}`}>
