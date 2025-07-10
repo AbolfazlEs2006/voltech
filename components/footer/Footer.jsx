@@ -52,16 +52,16 @@ function Footer() {
             </h1>
           </div>
           <div className="grid grid-cols-2 gap-3 mt-5 mb-5">
-            <button className="bg-gray-200 dark:bg-gray-800 dark:text-gray-200 rounded p-3">
+            <button className="bg-gray-300 dark:bg-gray-700 dark:text-gray-200 rounded p-3">
               ارسال رایگان به برخی شهر ها
             </button>
-            <button className="bg-gray-200 dark:bg-gray-800 dark:text-gray-200 rounded p-3">
+            <button className="bg-gray-300 dark:bg-gray-700 dark:text-gray-200 rounded p-3">
               ضمانت با گارانتی
             </button>
-            <button className="bg-gray-200 dark:bg-gray-800 dark:text-gray-200 rounded p-3">
+            <button className="bg-gray-300 dark:bg-gray-700 dark:text-gray-200 rounded p-3">
               پشتیبانی سریع
             </button>
-            <button className="bg-gray-200 dark:bg-gray-800 dark:text-gray-200 rounded p-3">
+            <button className="bg-gray-300 dark:bg-gray-700 dark:text-gray-200 rounded p-3">
               محصولات با کیفیت
             </button>
           </div>
