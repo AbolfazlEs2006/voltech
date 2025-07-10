@@ -1,5 +1,15 @@
 const sql = require("better-sqlite3");
-const db = sql(":memory:");
+const fs = require("fs");
+
+const isVercel = process.env.VERCEL === "1";
+
+const dbPath = isVercel ? "/tmp/product.db" : "product.db";
+
+if (isVercel && fs.existsSync(dbPath)) {
+  fs.unlinkSync(dbPath);
+}
+
+const db = sql(dbPath);
 
 db.prepare(
   `
