@@ -23,7 +23,6 @@ async function DetailProduct({ params }: ProductDetailsProps) {
     }
 
     const product: Product = await res.json();
-    console.log(product.img);
 
     return (
       <>

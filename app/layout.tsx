@@ -7,6 +7,7 @@ import { SessionProvider } from "next-auth/react";
 import { Session } from "next-auth";
 import { auth } from "@/auth";
 import { Toaster } from "react-hot-toast";
+import Footer from "@/components/footer/Footer";
 
 export const metadata: Metadata = {
   title: "VOLTech",
@@ -33,6 +34,7 @@ export default async function RootLayout({
             <Navbar />
             {children}
             <Toaster position="top-right" />
+            <Footer />
           </SessionProvider>
         </ReduxProvider>
       </body>

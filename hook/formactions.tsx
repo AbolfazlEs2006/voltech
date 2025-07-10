@@ -12,9 +12,6 @@ export async function handleLogin(prevState: any, formData: FormData) {
     if (!password || password.length < 6) {
       return { success: false, message: "رمز عبور باید حداقل 6 کاراکتر باشد" };
     }
-
-    console.log(email, password);
-
     return { success: true, message: "ثبت نام با موفقیت انجام شد" };
   } catch (error) {
     console.error("Login error:", error);
