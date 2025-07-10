@@ -1,5 +1,5 @@
 const sql = require("better-sqlite3");
-const db = sql("product.db");
+const db = sql(":memory:");
 
 db.prepare(
   `
