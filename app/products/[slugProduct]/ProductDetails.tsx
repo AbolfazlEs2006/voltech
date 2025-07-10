@@ -108,7 +108,7 @@ async function DetailProduct({ params }: ProductDetailsProps) {
             </h2>
           </div>
         </header>
-        <main className="w-100 md:w-full lg:w-300 mr-5 mt-8">
+        <main className="w-full lg:w-300 mr-5 mt-8 mb-10 lg:mb-0">
           <h1 className="text-end mt-8 mb-3 text-red-600 dark:text-gray-500 dark:font-bold">
             :ویژگی ها{" "}
           </h1>

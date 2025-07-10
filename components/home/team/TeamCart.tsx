@@ -19,7 +19,7 @@ function TeamCart({ img }: { img: string }) {
         <p className="text-center">برنامه نویس</p>
       </div>
 
-      <div className="flex flex-col gap-1 bg-gray-800 px-2 rounded">
+      <div className="flex flex-col gap-1 bg-gray-200 dark:bg-gray-800 px-2 rounded">
         <Link className="mt-2" href={"https://abolfazlestiri.vercel.app"}>
           <i className="bi bi-linkedin"></i>
         </Link>

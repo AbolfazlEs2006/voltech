@@ -14,7 +14,7 @@ function Category() {
     >
       <>
         <SwiperSlide
-          className={`flex bg-gray-200 dark:bg-gray-500 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
+          className={`flex bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
         >
           <Image
             src={"/images/drill.png"}
@@ -33,7 +33,7 @@ function Category() {
           </Link>
         </SwiperSlide>
         <SwiperSlide
-          className={`flex bg-gray-200 dark:bg-gray-500 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
+          className={`flex bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
         >
           <Image
             src={"/images/drill.png"}
@@ -51,7 +51,7 @@ function Category() {
           </Link>
         </SwiperSlide>
         <SwiperSlide
-          className={`flex bg-gray-200 dark:bg-gray-500 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
+          className={`flex bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
         >
           <Image
             src={"/images/drill.png"}
@@ -69,7 +69,7 @@ function Category() {
           </Link>
         </SwiperSlide>
         <SwiperSlide
-          className={`flex bg-gray-200 dark:bg-gray-500 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
+          className={`flex bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
         >
           <Image
             src={"/images/drill.png"}
@@ -87,7 +87,7 @@ function Category() {
           </Link>
         </SwiperSlide>
         <SwiperSlide
-          className={`flex bg-gray-200 dark:bg-gray-500 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
+          className={`flex bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
         >
           <Image
             src={"/images/drill.png"}
@@ -105,7 +105,7 @@ function Category() {
           </Link>
         </SwiperSlide>
         <SwiperSlide
-          className={`flex bg-gray-200 dark:bg-gray-500 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
+          className={`flex bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
         >
           <Image
             src={"/images/drill.png"}
@@ -123,7 +123,7 @@ function Category() {
           </Link>
         </SwiperSlide>
         <SwiperSlide
-          className={`flex bg-gray-200 dark:bg-gray-500 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
+          className={`flex bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
         >
           <Image
             src={"/images/drill.png"}
@@ -141,7 +141,7 @@ function Category() {
           </Link>
         </SwiperSlide>
         <SwiperSlide
-          className={`flex bg-gray-200 dark:bg-gray-500 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
+          className={`flex bg-gray-200 dark:bg-gray-800 text-gray-600 dark:text-gray-300 font-bold flex justify-center items-center text-center font-xl py-2 rounded`}
         >
           <Image
             src={"/images/drill.png"}

@@ -2,7 +2,7 @@ import Image from "next/image";
 
 function Catalog() {
   return (
-    <section className="lg:relative flex flex-col flex-col-reverse justify-between my-10 mt-30 bg-gray-500 dark:bg-gray-800 px-1 rounded py-3 lg:py-7">
+    <section className="lg:relative flex flex-col flex-col-reverse justify-between my-10 mt-30 bg-gray-200 dark:bg-gray-800 dark:bg-gray-800 px-1 rounded py-3 lg:py-7">
       <div className="mb-3 mx-5 md:hidden lg:block">
         <Image
           src={"/images/catalog.png"}

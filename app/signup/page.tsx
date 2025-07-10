@@ -5,7 +5,7 @@ import SignUpBtn from "@/components/signupbtn/SignUpBtn";
 function Singup() {
   return (
     <>
-      <section className="flex justify-evenly p-0 lg:py-6.5 bg-gray-200 dark:bg-transparent h-115 lg:mt-0 lg:h-120 lg:h-125 mt-10">
+      <section className="flex justify-evenly p-0 lg:py-6.5 bg-gray-200 dark:bg-transparent  lg:mt-0 h-127  lg:h-125 py-10">
         <div className="hidden lg:block">
           <Image
             src={"/images/signup.jpg"}

@@ -38,7 +38,7 @@ function BasketBtn() {
       {CartItem.length === 0 ? (
         <div
           tabIndex={0}
-          className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-72 shadow left-[-15] text-end shadow"
+          className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-72 shadow left-[-65] md:left-[-25] lg:left-[-15] right-0 text-end shadow"
         >
           <div className="card-body">
             <h1>سبد خرید شما خالی است</h1>
@@ -47,7 +47,7 @@ function BasketBtn() {
       ) : (
         <div
           tabIndex={0}
-          className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-72 shadow left-[-15] text-end shadow"
+          className="card card-compact dropdown-content bg-base-100 z-1 mt-3 w-72 shadow left-[-75] md:left-[-25] left-[-15] text-end shadow"
         >
           <div className="card-body">
             <span className="text-lg font-bold flex justify-end gap-1 items-center">
